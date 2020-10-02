@@ -1,0 +1,225 @@
+:root {
+  --primary-gradient: hsl(6, 100%, 80%);
+  --secondary-gradient: hsl(335, 100%, 65%);
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'raleway', sans-serif;
+  font-size: 14px;
+  color: var(--pale-blue);
+}
+
+body {
+  background: var(--very-dark-blue) url(images/bg-desktop.png) no-repeat fixed bottom;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -275px;
+}
+
+.container, .first-container, .second-container {
+  background: var(--dark-blue);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 35px;
+}
+
+.first-container {
+  border-top-right-radius: 100px;
+  width: 250px;
+  margin: 20px;
+}
+
+.logo-fylo img {
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  place-items: center;
+}
+
+.icon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: var(--very-dark-blue);
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  padding: auto;
+  margin: 7px;
+}
+
+.second-container {
+  width: 450px;
+  padding: 25px 35px;
+}
+
+.storage-bar {
+  width: auto;
+  height: 14px;
+  background-color: #0c122c;
+  border-radius: 10px;
+}
+
+.fill {
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-gradient)), to(var(--secondary-gradient)));
+  background: linear-gradient(to right, var(--primary-gradient), var(--secondary-gradient));
+  width: 81.5%;
+  height: 10px;
+  border-radius: 10px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.cursor {
+  background-color: white;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: 1px;
+  right: 1px;
+  float: right;
+}
+
+.storage-min-max {
+  width: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-items: space-between;
+  margin: 10px 0;
+}
+
+.storage-left {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 66.5%;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.triangle {
+  position: absolute;
+  right: 0px;
+  height: 0;
+  width: 0;
+  border-top: 30px solid white;
+  border-left: 30px solid transparent;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.large {
+  font-size: 40px;
+}
+
+.dark {
+  color: var(--very-dark-blue);
+}
+
+.margin-text {
+  margin: 15px 0;
+}
+
+.attribution {
+  color: var(--very-dark-blue);
+  position: absolute;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 5px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(images/bg-mobile.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .main-container {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px auto;
+    bottom: auto;
+  }
+  .container, .first-container, .second-container {
+    width: 85%;
+    max-width: 85%;
+  }
+  .second-container {
+    text-align: center;
+  }
+  .storage-left {
+    position: relative;
+    left: 50%;
+    bottom: -49px;
+    top: auto;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .triangle {
+    display: none;
+  }
+  .attribution {
+    font-size: 8px;
+  }
+  .attribution a {
+    font-size: 8px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
