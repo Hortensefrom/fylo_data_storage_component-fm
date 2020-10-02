@@ -34,6 +34,7 @@ body {
     border-radius: 10px;
     margin: 20px;
     padding: 35px;
+    box-shadow: 0 0.5px 25px var(--very-dark-blue);
 }
 
 // First container
@@ -113,13 +114,15 @@ body {
     top: 10px; left: 66.5%;
     border-radius: 10px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     color: var(--dark-blue);
+    display: flex;
+    align-items: center;
 }
 
 .triangle {
     position: absolute;
-    right: 0px;
+    right: 0px; bottom: -20px;
     height: 0; width: 0;
     border-top: 30px solid white;
     border-left: 30px solid transparent;
