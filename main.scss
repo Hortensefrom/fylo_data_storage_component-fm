@@ -16,10 +16,6 @@
 }
 
 
-// Variables
-$border-radius: 10px;
-$margin-block: 20px;
-
 // Body
 body {
     background: var(--very-dark-blue) url(images/bg-desktop.png) no-repeat fixed bottom;
@@ -35,12 +31,13 @@ body {
 
 .container {
     background: var(--dark-blue);
-    border-radius: $border-radius;
-    margin: $margin-block;
+    border-radius: 10px;
+    margin: 20px;
     padding: 35px;
 }
 
-// Head block
+// First container
+
 .first-container {
     @extend .container;
     border-top-right-radius: 100px;
@@ -68,7 +65,7 @@ body {
 }
 
 
-// Storage info
+// Second container
 
 .second-container {
     @extend .container;
@@ -109,7 +106,6 @@ body {
 }
 
 .storage-left {
-    color: var(--very-dark-blue);
     background-color: white;
     width: fit-content;
     padding: 10px 20px;
